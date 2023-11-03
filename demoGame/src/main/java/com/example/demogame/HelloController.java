@@ -18,7 +18,7 @@ public class HelloController {
     private TextField nombreTextField;
 
     public void registrarJugador(ActionEvent event) {
-        String nombre = nombreTextField.getText();
-        System.out.println("Jugador registrado: " + nombre);
+        String name = nombreTextField.getText();
+        System.out.println("Jugador registrado: " + name);
     }
 }
