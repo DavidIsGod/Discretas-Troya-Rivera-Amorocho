@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="189.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demogame.HelloController">
+    <children>
+        <Label layoutX="116.0" layoutY="10.0" text="¡Bienvenido!" />
+        <VBox alignment="CENTER" layoutX="44.0" layoutY="38.0" prefHeight="124.0" prefWidth="213.0" spacing="10.0">
+            <children>
+                <Label text="Registro de Jugador" />
+                <HBox spacing="10.0">
+                    <children>
+                        <Label text="Name:" />
+                        <TextField fx:id="nombreTextField" promptText="Ingrese su nombre" />
+                    </children>
+                </HBox>
+                <Button onAction="#registrarJugador" text="Registrar" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
