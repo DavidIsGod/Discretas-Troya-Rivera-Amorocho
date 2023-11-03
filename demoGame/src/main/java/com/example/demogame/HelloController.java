@@ -17,8 +17,14 @@ public class HelloController {
     @FXML
     private TextField nombreTextField;
 
+    @FXML
+    private TextField passwordTextField;
+
     public void registrarJugador(ActionEvent event) {
         String name = nombreTextField.getText();
+        String password = passwordTextField.getText();
+
+
         System.out.println("Jugador registrado: " + name);
     }
 }
