@@ -8,14 +8,14 @@
         <Label layoutX="116.0" layoutY="10.0" text="¡Bienvenido!" />
         <VBox alignment="CENTER" layoutX="44.0" layoutY="38.0" prefHeight="124.0" prefWidth="213.0" spacing="10.0">
             <children>
-                <Label text="Registro de Jugador" />
+                <Label text="Player Register" />
                 <HBox spacing="10.0">
                     <children>
                         <Label text="Name:" />
-                        <TextField fx:id="nombreTextField" promptText="Ingrese su nombre" />
+                        <TextField fx:id="nombreTextField" promptText="Type your name" />
                     </children>
                 </HBox>
-                <Button onAction="#registrarJugador" text="Registrar" />
+                <Button onAction="#registrarJugador" text="Sign in" />
             </children>
         </VBox>
     </children>
