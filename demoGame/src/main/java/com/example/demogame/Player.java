@@ -3,11 +3,12 @@ package com.example.demogame;
 public class Player {
 
     public String nickName;
-    public  String password;
 
-    public Player(String nickName, String password) {
+    public int score;
+
+    public Player(String nickName) {
         this.nickName = nickName;
-        this.password = password;
+        this.score = 0;
     }
 
     public String getNickName() {
@@ -18,11 +19,12 @@ public class Player {
         this.nickName = nickName;
     }
 
-    public String getPassword() {
-        return password;
+
+    public int getScore() {
+        return score;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setScore(int score) {
+        this.score = score;
     }
 }
