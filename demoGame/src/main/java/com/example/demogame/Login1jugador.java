@@ -32,7 +32,7 @@ public class Login1jugador {
 
 
                     Stage ventanaDeJuego = new Stage();
-                    ventanaDeJuego.setTitle("GTA 90000");
+                    ventanaDeJuego.setTitle("GTA V");
 
 
                     ventanaDeJuego.setScene(nuevaEscena);
