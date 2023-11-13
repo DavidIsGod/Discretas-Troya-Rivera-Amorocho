@@ -1,14 +1,20 @@
 package com.example.demogame;
 
+import javafx.scene.canvas.GraphicsContext;
+import java.awt.*;
+
 public class Player {
 
-    public String nickName;
-
+    private String nickName;
+    private GraphicsContext graphicsContext;
+    private Canvas canvas;
     private int ubicacionActual;
 
     public int score;
 
-    public Player(String nickName) {
+    public Player(String nickname) {
+        this.canvas = canvas;
+      //  this.graphicsContext = this.canvas.getGraphicsConfiguration();
         this.nickName = nickName;
         this.score = 0;
     }

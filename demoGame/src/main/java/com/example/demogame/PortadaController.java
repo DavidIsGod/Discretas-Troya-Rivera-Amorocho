@@ -1,59 +1,53 @@
 package com.example.demogame;
 
-import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
+import com.example.demogame.Screens.ScreenA;
+import javafx.application.Platform;
+import javafx.scene.image.Image;
 
-public class PortadaController {
-    public void jugarUnJugador(ActionEvent actionEvent) {
+import java.net.URL;
+import java.util.ResourceBundle;
 
-        Stage ventanaActual = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        ventanaActual.close();
+public class PortadaController implements Initializable{
 
-        try {
+    @FXML
+    private Canvas canvas;
+    private GraphicsContext graphicsContext;
+    private ScreenA screenA;
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("login1jugador.fxml"));
-            Parent root = loader.load();
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
 
-            Scene nuevaEscena = new Scene(root);
+        this.graphicsContext = canvas.getGraphicsContext2D();
+        this.screenA = new ScreenA(this.canvas);
 
-            Stage nuevaVentana = new Stage();
-            nuevaVentana.setTitle("Login");
-            nuevaVentana.setScene(nuevaEscena);
+        // Cargar la imagen de fondo
+        Image backgroundImage = new Image(getClass().getResourceAsStream("/map/mapa.png"));
 
-            nuevaVentana.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
+        graphicsContext.drawImage(backgroundImage, 0, 0);
 
 
+        // Hilo de Java
+        new Thread(
+                () -> {
+                    while (true){
 
+                        Platform.runLater( () -> {
+                            screenA.paint(backgroundImage);
 
-    public void jugarDosJugadores(ActionEvent actionEvent) {
+                        });
 
-        Stage ventanaActual = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        ventanaActual.close();
-
-        try {
-
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("login2jugadores.fxml"));
-            Parent root = loader.load();
-
-            Scene nuevaEscena = new Scene(root);
-
-            Stage nuevaVentana = new Stage();
-            nuevaVentana.setTitle("Login");
-            nuevaVentana.setScene(nuevaEscena);
-
-            nuevaVentana.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+                        try {
+                            Thread.sleep(70);
+                        } catch (InterruptedException e){
+                            e.printStackTrace();
+                        }
+                    }
+                }
+        ).start();
 
     }
 }
