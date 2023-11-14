@@ -1,1 +1,0 @@
-# Discretas-Troya-Rivera-Amorocho
