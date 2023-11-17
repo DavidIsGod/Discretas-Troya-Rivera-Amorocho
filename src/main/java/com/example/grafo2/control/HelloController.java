@@ -2,11 +2,13 @@ package com.example.grafo2.control;
 
 import com.example.grafo2.screens.ScreenA;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 
 import java.net.URL;
@@ -20,6 +22,15 @@ public class HelloController implements Initializable {
     private ScreenA screenA;
     @FXML
     private Canvas canvas;
+
+    @FXML
+    private TextField nombreTextField;
+
+    @FXML
+    private Label passwordTextField;
+
+    @FXML
+    private Label nicknameField;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -61,5 +72,12 @@ public class HelloController implements Initializable {
                 }
         ).start();
 
+    }
+    public void registrarJugador(ActionEvent event) {
+        String name = nombreTextField.getText();
+        String password = passwordTextField.getText();
+
+
+        System.out.println("Jugador registrado: " + name);
     }
 }
