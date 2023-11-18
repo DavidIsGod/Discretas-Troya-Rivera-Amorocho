@@ -21,21 +21,14 @@ public class ControllerHomeScreen {
 
 
     @FXML
-    private PasswordField passwordField;
+    private TextField nicknameField;
 
     private Stage mainStage;
 
     public void StartButtonClick (ActionEvent event) {
-        String username = passwordField.getText();
-        if (userVault != null) {
-            if (username.equals(userVault.getNickname())) {
-                openVentanaJuego();
-            } else {
-                showAlert("Contraseña incorrecta", "La contraseña ingresada es incorrecta.");
-            }
-        } else {
-            showAlert("Error", "El objeto UserVault no ha sido inicializado.");
-        }
+        String username = nicknameField.getText();
+        openVentanaJuego();
+
     }
 
     public void setMainStage(Stage mainStage) {
@@ -53,7 +46,7 @@ public class ControllerHomeScreen {
 
             stage.show();
 
-           Stage stage2 = (Stage) passwordField.getScene().getWindow();
+           Stage stage2 = (Stage) nicknameField.getScene().getWindow();
               stage2.close();
 
 

@@ -4,27 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c8200cd-21ea-43b5-bd5e-fb28af39a725" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="3c8200cd-21ea-43b5-bd5e-fb28af39a725" name="Changes" comment="Reversed pepito">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/ControllerHomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/ControllerHomeScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/JuegoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/JuegoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Avatar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Avatar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/screens/ScreenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/screens/ScreenA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/Juego.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/Juego.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/hello-controller.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/hello-view.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/home-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/home-screen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/HelloApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/control/ControllerHomeScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/control/ControllerHomeScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/control/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/hello-controller.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/home-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/home-screen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/Juego.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/Juego.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/control/JuegoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/control/JuegoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/model/Avatar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/model/Avatar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/screens/ScreenA$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/screens/ScreenA$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/screens/ScreenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/screens/ScreenA.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,11 +97,26 @@
       <workItem from="1699911231123" duration="1557000" />
       <workItem from="1700290761859" duration="572000" />
       <workItem from="1700291358792" duration="256000" />
-      <workItem from="1700291623819" duration="2187000" />
+      <workItem from="1700291623819" duration="2476000" />
+      <workItem from="1700337831389" duration="105000" />
+      <workItem from="1700338023130" duration="622000" />
     </task>
+    <task id="LOCAL-00001" summary="Reversed pepito">
+      <option name="closed" value="true" />
+      <created>1700294093908</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700294093908</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Reversed pepito" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reversed pepito" />
   </component>
 </project>

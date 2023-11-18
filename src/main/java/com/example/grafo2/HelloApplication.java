@@ -14,15 +14,12 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-
-        Player player = new Player("a");
-
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/grafo2/home-screen.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 460, 460);
         stage.setTitle("Hello!");
         stage.setScene(scene);
         ControllerHomeScreen controller = fxmlLoader.getController();
-        controller.UserVault(player);
+        controller.setMainStage(stage);
         stage.show();
     }
 
