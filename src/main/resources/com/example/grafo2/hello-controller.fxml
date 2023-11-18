@@ -4,29 +4,29 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="574.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grafo2.control.HelloController">
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grafo2.control.HelloController">
     <children>
-        <Label layoutX="91.0" layoutY="14.0" text="¡Welcome to Discrete Maze !" />
+           <ImageView fitHeight="482.0" fitWidth="508.0" layoutY="-1.0">
+               <image>
+                   <Image url="@../../../portada/Register Background Maze.jpg" />
+               </image>
+           </ImageView>
         <VBox alignment="CENTER" layoutX="46.0" layoutY="64.0" prefHeight="183.0" prefWidth="241.0" spacing="10.0">
             <children>
-                <Label text="Player Register" />
-                <HBox spacing="10.0">
-                    <children>
-                        <Label text="Name:" />
-                    </children>
-                </HBox>
-                  <TextField fx:id="nombreTextField" promptText="Type your name to star!" />
-                <Button onAction="#registrarJugador" text="Sign in" />
+                <HBox spacing="10.0" />
                 <HBox prefHeight="134.0" prefWidth="229.0" spacing="10.0">
                     <Canvas height="294.0" width="212.0" />
                 </HBox>
             </children>
         </VBox>
-           <ImageView fitHeight="328.0" fitWidth="270.0" layoutX="353.0" layoutY="51.0">
-               <image>
-                   <Image url="@/portada/Discrete Maze.jpg" />
-               </image>
-           </ImageView>
+      <Label layoutX="205.0" layoutY="14.0" prefHeight="31.0" prefWidth="98.0" text="Nickname" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+            <TextField fx:id="nombreTextField" layoutX="179.0" layoutY="61.0" promptText="Type your name to star!" />
+          <Button layoutX="213.0" layoutY="402.0" onAction="#registrarJugador" prefHeight="53.0" prefWidth="82.0" text="Sign in" />
     </children>
 </AnchorPane>

@@ -1,83 +1,79 @@
 package com.example.grafo2.control;
 
+import com.example.grafo2.model.Player;
 import com.example.grafo2.screens.ScreenA;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class HelloController implements Initializable {
-    @FXML
-    private GraphicsContext graphicsContext;
-    @FXML
-    private ScreenA screenA;
-    @FXML
-    private Canvas canvas;
+public class HelloController  {
 
-    @FXML
-    private TextField nombreTextField;
-
-    @FXML
-    private Label passwordTextField;
-
-    @FXML
-    private Label nicknameField;
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-
-        this.graphicsContext = canvas.getGraphicsContext2D();
-        this.screenA = new ScreenA(this.canvas);
-
-        // Cargar la imagen de fondo-
-        Image backgroundImage = new Image(getClass().getResourceAsStream("/portada/img.png"));
-
-        graphicsContext.drawImage(backgroundImage, 0, 0);
+    private Player player;
 
 
-        //Permite movimiento
-        this.canvas.setOnKeyPressed(event -> {
-            screenA.onKeyPressed(event);
-        });
-        //Detiene el personaje cuando de presionar la tecla
-        this.canvas.setOnKeyReleased(event -> {
-            screenA.onKeyReleased(event);
-        });
+    private PasswordField passwordField;
 
-        // Hilo de Java
-        new Thread(
-                () -> {
-                    while (true){
 
-                        Platform.runLater( () -> {
-                            screenA.paint(backgroundImage);
 
-                        });
 
-                        try {
-                            Thread.sleep(70);
-                        } catch (InterruptedException e){
-                            e.printStackTrace();
-                        }
-                    }
-                }
-        ).start();
-
-    }
     public void registrarJugador(ActionEvent event) {
-        String name = nombreTextField.getText();
-        String password = passwordTextField.getText();
+        String name = passwordField.getText();
+        player.setNickname(name);
 
+        if (player != null) {
+            if (name.equals(player.getNickname())) {
+                Juego();
+            } else {
+                showAlert("Contraseña incorrecta", "La contraseña ingresada es incorrecta.");
+            }
+        } else {
+            showAlert("Error", "El objeto UserVault no ha sido inicializado.");
+        }
 
-        System.out.println("Jugador registrado: " + name);
     }
+
+    public void showAlert(String title, String content) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(content);
+
+        alert.showAndWait();
+    }
+
+    public void Juego() {
+        try {
+            FXMLLoader loader = new FXMLLoader(
+                    getClass().getResource("/com/example/grafo2/Juego.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle("Level 1 - 1");
+            stage.setScene(new Scene(loader.load(), 460, 460));
+
+            stage.show();
+
+            Stage currentStage = (Stage) passwordField.getScene().getWindow();
+            currentStage.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }
