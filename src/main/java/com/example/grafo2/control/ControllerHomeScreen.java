@@ -19,12 +19,23 @@ public class ControllerHomeScreen {
 
     private Player userVault;
 
+
+    @FXML
     private PasswordField passwordField;
 
     private Stage mainStage;
 
     public void StartButtonClick (ActionEvent event) {
-        openVentanaJuego();
+        String username = passwordField.getText();
+        if (userVault != null) {
+            if (username.equals(userVault.getNickname())) {
+                openVentanaJuego();
+            } else {
+                showAlert("Contraseña incorrecta", "La contraseña ingresada es incorrecta.");
+            }
+        } else {
+            showAlert("Error", "El objeto UserVault no ha sido inicializado.");
+        }
     }
 
     public void setMainStage(Stage mainStage) {
@@ -35,14 +46,15 @@ public class ControllerHomeScreen {
     private void openVentanaJuego() {
         try {
             FXMLLoader loader = new FXMLLoader(
-                    getClass().getResource("/com/example/grafo2/hello-controller.fxml"));
+                    getClass().getResource("/com/example/grafo2/Juego.fxml"));
             Stage stage = new Stage();
             stage.setTitle("Register papi");
-            stage.setScene(new Scene(loader.load(), 460, 460));
+            stage.setScene(new Scene(loader.load(), 1200, 600));
 
             stage.show();
 
-            mainStage.close();
+           Stage stage2 = (Stage) passwordField.getScene().getWindow();
+              stage2.close();
 
 
         } catch (IOException e) {
@@ -60,6 +72,7 @@ public class ControllerHomeScreen {
     }
 
 
-
-
+    public void UserVault(Player player) {
+        this.userVault = player;
+    }
 }

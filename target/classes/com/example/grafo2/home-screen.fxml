@@ -21,10 +21,11 @@
             <Image url="@../../../portada/Discrete Maze Label.png" />
          </image>
       </ImageView>
-        <Button layoutX="121.0" layoutY="409.0" mnemonicParsing="false" onAction="#StartButtonClick" opacity="0.0" prefHeight="59.0" prefWidth="215.0" style="-fx-background-color: black;" textFill="#ffffff9d">
+        <Button layoutX="121.0" layoutY="418.0" mnemonicParsing="false" onAction="#StartButtonClick" opacity="0.0" prefHeight="59.0" prefWidth="215.0" style="-fx-background-color: black;" textFill="#ffffff9d">
             <font>
                 <Font name="Impact" size="31.0" />
             </font>
         </Button>
+        <PasswordField fx:id="passwordField" layoutX="164.0" layoutY="251.0" promptText="Type your nickname!" />
     </children>
 </AnchorPane>

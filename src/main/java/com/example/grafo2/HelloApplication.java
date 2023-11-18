@@ -1,5 +1,5 @@
 package com.example.grafo2;
-
+import com.example.grafo2.control.ControllerHomeScreen;
 import com.example.grafo2.model.Player;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -15,12 +15,14 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        Player player = new Player("Pepito");
+        Player player = new Player("a");
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/grafo2/home-screen.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 460, 460);
         stage.setTitle("Hello!");
         stage.setScene(scene);
+        ControllerHomeScreen controller = fxmlLoader.getController();
+        controller.UserVault(player);
         stage.show();
     }
 

@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c8200cd-21ea-43b5-bd5e-fb28af39a725" name="Changes" comment="" />
+    <list default="true" id="3c8200cd-21ea-43b5-bd5e-fb28af39a725" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/ControllerHomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/ControllerHomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/JuegoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/JuegoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Avatar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Avatar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/screens/ScreenA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/screens/ScreenA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/Juego.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/Juego.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/hello-controller.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/home-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/home-screen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/HelloApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/control/ControllerHomeScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/control/ControllerHomeScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/control/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/hello-controller.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/home-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/home-screen.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +37,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -36,8 +60,10 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/David/IdeaProjects/Grafo2/src/main/resources/animations.avatar&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Music/Discretas-Troya-Rivera-Amorocho&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -80,6 +106,9 @@
       <updated>1699906919701</updated>
       <workItem from="1699906920838" duration="3975000" />
       <workItem from="1699911231123" duration="1557000" />
+      <workItem from="1700290761859" duration="572000" />
+      <workItem from="1700291358792" duration="256000" />
+      <workItem from="1700291623819" duration="2187000" />
     </task>
     <servers />
   </component>

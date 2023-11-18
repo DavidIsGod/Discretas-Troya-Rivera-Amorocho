@@ -24,6 +24,7 @@ public class ScreenA {
     }
 
     public void drawMap(Image mapImage) {
+
         setMapImage(mapImage);
     }
 
@@ -32,13 +33,13 @@ public class ScreenA {
     }
 
     public void setMapImage(Image mapImage) {
-        double nuevoAncho = 600;
+        double nuevoAncho = 900;
         double nuevoAlto = (nuevoAncho / mapImage.getWidth()) * mapImage.getHeight();
 
-        canvas.setWidth(nuevoAncho);
+        canvas.setWidth(nuevoAncho + 400);
         canvas.setHeight(nuevoAlto);
 
-        graphicsContext.drawImage(mapImage, 0, 0, nuevoAncho+300, nuevoAlto-4);
+        graphicsContext.drawImage(mapImage, 0, 0, nuevoAncho + 450, nuevoAlto+100);
 
     }
 

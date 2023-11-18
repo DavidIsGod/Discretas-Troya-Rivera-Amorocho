@@ -33,6 +33,8 @@ public class Avatar {
     private boolean downPressed;
     private final double screenWidth; // Ancho de la pantalla
     private final double screenHeight; // Alto de la pantalla
+
+    private double escala = 1.1;
     public Avatar(Canvas canvas) {
 
         this.canvas = canvas;
@@ -87,21 +89,23 @@ public class Avatar {
 
 
     public void paint() {
+        double width = getImageWidth() * escala;
+        double height = getImageHeight() * escala;
         onMove();
-        if (state == 0) {
-            graphicsContext.drawImage(idles.get(frame % idles.size()), position.getX(), position.getY());
+        if (state ==0 ) {
+            graphicsContext.drawImage(idles.get(frame % idles.size()), position.getX(), position.getY(), width, height);
             frame++;
         } else if (state == 1) {
-            graphicsContext.drawImage(right.get(frame % right.size()), position.getX(), position.getY());
+            graphicsContext.drawImage(right.get(frame % right.size()), position.getX(), position.getY(), width, height);
             frame++;
         } else if (state == 2) {
-            graphicsContext.drawImage(up.get(frame % up.size()), position.getX(), position.getY());
+            graphicsContext.drawImage(up.get(frame % up.size()), position.getX(), position.getY(), width, height);
             frame++;
         } else if (state == 3) {
-            graphicsContext.drawImage(left.get(frame % left.size()), position.getX(), position.getY());
+            graphicsContext.drawImage(left.get(frame % left.size()), position.getX(), position.getY(), width, height);
             frame++;
         } else if (state == 4) {
-            graphicsContext.drawImage(down.get(frame % down.size()), position.getX(), position.getY());
+            graphicsContext.drawImage(down.get(frame % down.size()), position.getX(), position.getY(), width, height);
             frame++;
         }
     }
@@ -163,11 +167,11 @@ public class Avatar {
     }
     //Ajusta el ancho
     private double getImageWidth() {
-        return ((idles.get(0)).getWidth()-530);
+        return ((idles.get(0)).getWidth()-1000);
     }
     //Ajusta la altura
     private double getImageHeight() {
-        return idles.get(0).getHeight()-335;
+        return idles.get(0).getHeight()-1000;
     }
     public void onKeyReleasedAll() {
         rightPressed = false;

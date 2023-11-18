@@ -40,7 +40,7 @@ public class JuegoController implements Initializable {
 
         Image backgroundImage = new Image(getClass().getResourceAsStream("/portada/Map Maze xd.jpg"));
 
-        graphicsContext.drawImage(backgroundImage, 0, 0);
+        graphicsContext.drawImage(backgroundImage, 500, 1200);
 
         // Permite movimiento
         this.canvas.setOnKeyPressed(event -> {
