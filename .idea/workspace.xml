@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c8200cd-21ea-43b5-bd5e-fb28af39a725" name="Changes" comment="Reversed pepito">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/ControllerHomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/ControllerHomeScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/home-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/home-screen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/Juego.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/Juego.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/control/JuegoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/control/JuegoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/model/Avatar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/model/Avatar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/screens/ScreenA$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/screens/ScreenA$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/screens/ScreenA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/screens/ScreenA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,21 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Music/Discretas-Troya-Rivera-Amorocho&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/troya/OneDrive - Universidad Icesi (@icesi.edu.co)/Documentos/Apo2/Integradora 3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\David\IdeaProjects\Grafo2\src\main\resources\animations.avatar" />
@@ -100,6 +94,7 @@
       <workItem from="1700291623819" duration="2476000" />
       <workItem from="1700337831389" duration="105000" />
       <workItem from="1700338023130" duration="622000" />
+      <workItem from="1700835936838" duration="2410000" />
     </task>
     <task id="LOCAL-00001" summary="Reversed pepito">
       <option name="closed" value="true" />
