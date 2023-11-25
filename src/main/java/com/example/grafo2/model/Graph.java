@@ -1,4 +1,4 @@
-package com.example.grafo2.model;
+/*package com.example.grafo2.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,3 +38,4 @@ public class Graph {
         return visitedVertices;
     }
 }
+*/

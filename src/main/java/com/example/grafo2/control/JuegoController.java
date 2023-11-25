@@ -42,16 +42,6 @@ public class JuegoController implements Initializable {
 
         graphicsContext.drawImage(backgroundImage, 500, 1200);
 
-        // Permite movimiento
-        this.canvas.setOnKeyPressed(event -> {
-            screenA.onKeyPressed(event);
-
-        });
-        // Detiene el personaje cuando de presionar la tecla
-        this.canvas.setOnKeyReleased(event -> {
-            screenA.onKeyReleased(event);
-        });
-
         // Hilo de Java
         new Thread(
                 () -> {

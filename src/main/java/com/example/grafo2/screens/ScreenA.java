@@ -20,7 +20,6 @@ public class ScreenA {
     }
     public void paint(Image mapImage) {
         drawMap(mapImage);
-        drawAvatar();
     }
 
     public void drawMap(Image mapImage) {
@@ -28,9 +27,6 @@ public class ScreenA {
         setMapImage(mapImage);
     }
 
-    public void drawAvatar() {
-        avatar.paint();
-    }
 
     public void setMapImage(Image mapImage) {
         double nuevoAncho = 900;
@@ -44,29 +40,6 @@ public class ScreenA {
     }
 
 
-    public void onKeyPressed(KeyEvent event){
-        this.avatar.onKeyPressed(event);
-    }
-    public void onKeyReleased(KeyEvent event) {
-        switch (event.getCode()) {
-            case RIGHT:
-                avatar.setRightPressed(false);
-                break;
-            case UP:
-                avatar.setUpPressed(false);
-                break;
-            case LEFT:
-                avatar.setLeftPressed(false);
-                break;
-            case DOWN:
-                avatar.setDownPressed(false);
-                break;
-        }
-
-        if (!event.isControlDown() && !event.isAltDown() && !event.isMetaDown()) {
-            avatar.onKeyReleasedAll();
-        }
-    }
 
 
 }

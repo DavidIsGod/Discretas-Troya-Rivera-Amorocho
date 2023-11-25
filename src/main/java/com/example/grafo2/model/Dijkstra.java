@@ -1,5 +1,5 @@
 package com.example.grafo2.model;
-
+/*
 import java.util.*;
 
 public class Dijkstra {
@@ -46,3 +46,4 @@ public class Dijkstra {
         return maxTime;
     }
 }
+*/

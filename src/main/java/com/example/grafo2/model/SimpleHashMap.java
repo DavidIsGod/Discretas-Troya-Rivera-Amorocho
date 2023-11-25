@@ -1,4 +1,4 @@
-package com.example.grafo2.model;
+/*package com.example.grafo2.model;
 
 public class SimpleHashMap<K, V> {
 
@@ -147,3 +147,4 @@ public class SimpleHashMap<K, V> {
 
 
     }
+}*/
