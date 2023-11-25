@@ -5,100 +5,99 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grafo2.control.JuegoController">
-
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grafo2.control.JuegoController">
     <children>
-        <Canvas fx:id="canvas" focusTraversable="true" height="637.0" layoutX="-105.0" layoutY="-68.0" width="826.0" />
+        <Canvas fx:id="canvas" focusTraversable="true" height="449.0" layoutX="-9.0" layoutY="-8.0" width="742.0" />
       <ImageView fitHeight="451.0" fitWidth="729.0" layoutX="-2.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../portada/Map Maze xd.jpg" />
          </image></ImageView>
       <RadioButton fx:id="Node1" layoutX="7.0" layoutY="403.0" mnemonicParsing="false" text="1" />
       <RadioButton fx:id="Node2" layoutX="115.0" layoutY="6.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node3" layoutY="224.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node4" layoutX="61.0" layoutY="406.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node5" layoutX="115.0" layoutY="291.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node6" layoutX="238.0" layoutY="15.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node7" layoutX="151.0" layoutY="404.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node8" layoutX="7.0" layoutY="139.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node9" layoutX="7.0" layoutY="31.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node10" layoutX="57.0" layoutY="6.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node11" layoutX="14.0" layoutY="285.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="28.0" text="2" />
-      <RadioButton fx:id="Node12" layoutX="61.0" layoutY="262.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node13" layoutX="194.0" layoutY="31.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node14" layoutX="137.0" layoutY="31.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node15" layoutX="214.0" layoutY="61.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node16" layoutX="266.0" layoutY="31.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node17" layoutX="266.0" layoutY="110.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node18" layoutX="238.0" layoutY="95.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node19" layoutX="238.0" layoutY="291.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node20" layoutX="200.0" layoutY="262.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node21" layoutX="208.0" layoutY="204.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node22" layoutX="208.0" layoutY="383.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node23" layoutX="180.0" layoutY="353.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node24" layoutX="294.0" layoutY="406.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node25" layoutX="294.0" layoutY="353.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node26" layoutX="350.0" layoutY="405.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node27" layoutX="417.0" layoutY="406.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node28" layoutX="497.0" layoutY="406.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node29" layoutX="469.0" layoutY="323.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node30" layoutX="497.0" layoutY="262.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node31" layoutX="546.0" layoutY="323.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node32" layoutX="613.0" layoutY="306.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node33" layoutX="532.0" layoutY="353.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node34" layoutX="602.0" layoutY="384.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node35" layoutX="546.0" layoutY="412.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node36" layoutX="699.0" layoutY="405.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node37" layoutX="699.0" layoutY="353.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node38" layoutX="647.0" layoutY="344.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node39" layoutX="657.0" layoutY="262.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node40" layoutX="707.0" layoutY="262.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node41" layoutX="675.0" layoutY="225.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node42" layoutX="671.0" layoutY="147.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node43" layoutX="643.0" layoutY="224.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node44" layoutX="602.0" layoutY="233.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node45" layoutX="613.0" layoutY="175.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node46" layoutX="532.0" layoutY="175.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node47" layoutX="491.0" layoutY="119.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node48" layoutX="441.0" layoutY="156.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node49" layoutX="441.0" layoutY="204.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node50" layoutX="378.0" layoutY="167.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node51" layoutX="491.0" layoutY="234.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node52" layoutX="553.0" layoutY="243.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node53" layoutX="308.0" layoutY="6.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node54" layoutX="497.0" layoutY="7.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node55" layoutX="525.0" layoutY="111.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node56" layoutX="574.0" layoutY="87.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node57" layoutX="532.0" layoutY="6.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node58" layoutX="613.0" layoutY="15.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node59" layoutX="616.0" layoutY="119.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node60" layoutX="699.0" layoutY="119.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node61" layoutX="699.0" layoutY="7.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node62" layoutX="57.0" layoutY="177.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node63" layoutX="95.0" layoutY="233.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node64" layoutX="129.0" layoutY="323.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node65" layoutX="129.0" layoutY="204.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node66" layoutX="43.0" layoutY="147.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node67" layoutX="35.0" layoutY="61.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node68" layoutX="109.0" layoutY="61.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node69" layoutX="180.0" layoutY="111.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node70" layoutX="71.0" layoutY="110.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node71" layoutX="375.0" layoutY="291.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node72" layoutX="254.0" layoutY="353.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node73" layoutX="378.0" layoutY="61.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node74" layoutX="302.0" layoutY="95.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node75" layoutX="268.0" layoutY="148.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node76" layoutX="316.0" layoutY="235.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node77" layoutX="361.0" layoutY="233.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node78" layoutX="417.0" layoutY="298.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node79" layoutX="431.0" layoutY="362.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node80" layoutX="61.0" layoutY="292.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="28.0" text="2" />
-      <RadioButton fx:id="Node81" layoutX="61.0" layoutY="370.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="28.0" text="2" />
-      <RadioButton fx:id="Node82" layoutX="469.0" layoutY="40.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node83" layoutX="417.0" layoutY="168.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node84" layoutX="417.0" layoutY="95.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node85" layoutX="29.0" layoutY="339.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="28.0" text="2" />
-      <RadioButton fx:id="Node86" layoutX="294.0" layoutY="323.0" mnemonicParsing="false" text="2" />
-      <RadioButton fx:id="Node87" layoutX="165.0" layoutY="177.0" mnemonicParsing="false" text="2" />
+      <RadioButton fx:id="Node3" layoutY="224.0" mnemonicParsing="false" text="3" />
+      <RadioButton fx:id="Node4" layoutX="61.0" layoutY="406.0" mnemonicParsing="false" text="4" />
+      <RadioButton fx:id="Node5" layoutX="115.0" layoutY="291.0" mnemonicParsing="false" text="5" />
+      <RadioButton fx:id="Node6" layoutX="238.0" layoutY="15.0" mnemonicParsing="false" text="6" />
+      <RadioButton fx:id="Node7" layoutX="151.0" layoutY="404.0" mnemonicParsing="false" text="7" />
+      <RadioButton fx:id="Node8" layoutX="7.0" layoutY="139.0" mnemonicParsing="false" text="8" />
+      <RadioButton fx:id="Node9" layoutX="7.0" layoutY="31.0" mnemonicParsing="false" text="9" />
+      <RadioButton fx:id="Node10" layoutX="57.0" layoutY="6.0" mnemonicParsing="false" text="10" />
+      <RadioButton fx:id="Node11" layoutX="14.0" layoutY="285.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="34.0" text="11" />
+      <RadioButton fx:id="Node12" layoutX="61.0" layoutY="262.0" mnemonicParsing="false" text="12" />
+      <RadioButton fx:id="Node13" layoutX="194.0" layoutY="31.0" mnemonicParsing="false" text="13" />
+      <RadioButton fx:id="Node14" layoutX="137.0" layoutY="31.0" mnemonicParsing="false" text="14" />
+      <RadioButton fx:id="Node15" layoutX="214.0" layoutY="61.0" mnemonicParsing="false" text="15" />
+      <RadioButton fx:id="Node16" layoutX="266.0" layoutY="31.0" mnemonicParsing="false" text="16" />
+      <RadioButton fx:id="Node17" layoutX="266.0" layoutY="110.0" mnemonicParsing="false" text="17" />
+      <RadioButton fx:id="Node18" layoutX="238.0" layoutY="95.0" mnemonicParsing="false" text="18" />
+      <RadioButton fx:id="Node19" layoutX="238.0" layoutY="291.0" mnemonicParsing="false" text="19" />
+      <RadioButton fx:id="Node20" layoutX="200.0" layoutY="262.0" mnemonicParsing="false" text="20" />
+      <RadioButton fx:id="Node21" layoutX="208.0" layoutY="204.0" mnemonicParsing="false" text="21" />
+      <RadioButton fx:id="Node22" layoutX="208.0" layoutY="383.0" mnemonicParsing="false" text="22" />
+      <RadioButton fx:id="Node23" layoutX="180.0" layoutY="353.0" mnemonicParsing="false" text="23" />
+      <RadioButton fx:id="Node24" layoutX="294.0" layoutY="406.0" mnemonicParsing="false" text="24" />
+      <RadioButton fx:id="Node25" layoutX="294.0" layoutY="353.0" mnemonicParsing="false" text="25" />
+      <RadioButton fx:id="Node26" layoutX="350.0" layoutY="405.0" mnemonicParsing="false" text="26" />
+      <RadioButton fx:id="Node27" layoutX="417.0" layoutY="406.0" mnemonicParsing="false" text="27" />
+      <RadioButton fx:id="Node28" layoutX="497.0" layoutY="406.0" mnemonicParsing="false" text="28" />
+      <RadioButton fx:id="Node29" layoutX="469.0" layoutY="323.0" mnemonicParsing="false" text="29" />
+      <RadioButton fx:id="Node30" layoutX="497.0" layoutY="262.0" mnemonicParsing="false" text="30" />
+      <RadioButton fx:id="Node31" layoutX="546.0" layoutY="323.0" mnemonicParsing="false" text="31" />
+      <RadioButton fx:id="Node32" layoutX="613.0" layoutY="306.0" mnemonicParsing="false" text="32" />
+      <RadioButton fx:id="Node33" layoutX="532.0" layoutY="353.0" mnemonicParsing="false" text="33" />
+      <RadioButton fx:id="Node34" layoutX="602.0" layoutY="384.0" mnemonicParsing="false" text="34" />
+      <RadioButton fx:id="Node35" layoutX="546.0" layoutY="412.0" mnemonicParsing="false" text="35" />
+      <RadioButton fx:id="Node36" layoutX="699.0" layoutY="405.0" mnemonicParsing="false" text="36" />
+      <RadioButton fx:id="Node37" layoutX="699.0" layoutY="353.0" mnemonicParsing="false" text="37" />
+      <RadioButton fx:id="Node38" layoutX="647.0" layoutY="344.0" mnemonicParsing="false" text="38" />
+      <RadioButton fx:id="Node39" layoutX="657.0" layoutY="262.0" mnemonicParsing="false" text="39" />
+      <RadioButton fx:id="Node40" layoutX="707.0" layoutY="262.0" mnemonicParsing="false" text="40" />
+      <RadioButton fx:id="Node41" layoutX="675.0" layoutY="225.0" mnemonicParsing="false" text="41" />
+      <RadioButton fx:id="Node42" layoutX="671.0" layoutY="147.0" mnemonicParsing="false" text="42" />
+      <RadioButton fx:id="Node43" layoutX="643.0" layoutY="224.0" mnemonicParsing="false" text="43" />
+      <RadioButton fx:id="Node44" layoutX="602.0" layoutY="233.0" mnemonicParsing="false" text="44" />
+      <RadioButton fx:id="Node45" layoutX="613.0" layoutY="175.0" mnemonicParsing="false" text="45" />
+      <RadioButton fx:id="Node46" layoutX="532.0" layoutY="175.0" mnemonicParsing="false" text="46" />
+      <RadioButton fx:id="Node47" layoutX="491.0" layoutY="119.0" mnemonicParsing="false" text="47" />
+      <RadioButton fx:id="Node48" layoutX="441.0" layoutY="156.0" mnemonicParsing="false" text="48" />
+      <RadioButton fx:id="Node49" layoutX="441.0" layoutY="204.0" mnemonicParsing="false" text="49" />
+      <RadioButton fx:id="Node50" layoutX="378.0" layoutY="167.0" mnemonicParsing="false" text="50" />
+      <RadioButton fx:id="Node51" layoutX="491.0" layoutY="234.0" mnemonicParsing="false" text="51" />
+      <RadioButton fx:id="Node52" layoutX="553.0" layoutY="243.0" mnemonicParsing="false" text="52" />
+      <RadioButton fx:id="Node53" layoutX="308.0" layoutY="6.0" mnemonicParsing="false" text="53" />
+      <RadioButton fx:id="Node54" layoutX="497.0" layoutY="7.0" mnemonicParsing="false" text="54" />
+      <RadioButton fx:id="Node55" layoutX="525.0" layoutY="111.0" mnemonicParsing="false" text="55" />
+      <RadioButton fx:id="Node56" layoutX="574.0" layoutY="87.0" mnemonicParsing="false" text="56" />
+      <RadioButton fx:id="Node57" layoutX="532.0" layoutY="6.0" mnemonicParsing="false" text="57" />
+      <RadioButton fx:id="Node58" layoutX="613.0" layoutY="15.0" mnemonicParsing="false" text="58" />
+      <RadioButton fx:id="Node59" layoutX="616.0" layoutY="119.0" mnemonicParsing="false" text="59" />
+      <RadioButton fx:id="Node60" layoutX="682.0" layoutY="119.0" mnemonicParsing="false" text="60" />
+      <RadioButton fx:id="Node61" layoutX="692.0" layoutY="7.0" mnemonicParsing="false" text="61" />
+      <RadioButton fx:id="Node62" layoutX="57.0" layoutY="177.0" mnemonicParsing="false" text="62" />
+      <RadioButton fx:id="Node63" layoutX="95.0" layoutY="233.0" mnemonicParsing="false" text="63" />
+      <RadioButton fx:id="Node64" layoutX="129.0" layoutY="323.0" mnemonicParsing="false" text="64" />
+      <RadioButton fx:id="Node65" layoutX="129.0" layoutY="204.0" mnemonicParsing="false" text="65" />
+      <RadioButton fx:id="Node66" layoutX="43.0" layoutY="147.0" mnemonicParsing="false" text="66" />
+      <RadioButton fx:id="Node67" layoutX="35.0" layoutY="61.0" mnemonicParsing="false" text="67" />
+      <RadioButton fx:id="Node68" layoutX="109.0" layoutY="61.0" mnemonicParsing="false" text="68" />
+      <RadioButton fx:id="Node69" layoutX="180.0" layoutY="111.0" mnemonicParsing="false" text="69" />
+      <RadioButton fx:id="Node70" layoutX="71.0" layoutY="110.0" mnemonicParsing="false" text="70" />
+      <RadioButton fx:id="Node71" layoutX="375.0" layoutY="291.0" mnemonicParsing="false" text="71" />
+      <RadioButton fx:id="Node72" layoutX="254.0" layoutY="353.0" mnemonicParsing="false" text="72" />
+      <RadioButton fx:id="Node73" layoutX="378.0" layoutY="61.0" mnemonicParsing="false" text="73" />
+      <RadioButton fx:id="Node74" layoutX="302.0" layoutY="95.0" mnemonicParsing="false" text="74" />
+      <RadioButton fx:id="Node75" layoutX="268.0" layoutY="148.0" mnemonicParsing="false" text="75" />
+      <RadioButton fx:id="Node76" layoutX="316.0" layoutY="235.0" mnemonicParsing="false" text="76" />
+      <RadioButton fx:id="Node77" layoutX="361.0" layoutY="233.0" mnemonicParsing="false" text="77" />
+      <RadioButton fx:id="Node78" layoutX="417.0" layoutY="298.0" mnemonicParsing="false" text="78" />
+      <RadioButton fx:id="Node79" layoutX="431.0" layoutY="362.0" mnemonicParsing="false" text="79" />
+      <RadioButton fx:id="Node80" layoutX="61.0" layoutY="292.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="34.0" text="80" />
+      <RadioButton fx:id="Node81" layoutX="61.0" layoutY="365.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="34.0" text="81" />
+      <RadioButton fx:id="Node82" layoutX="469.0" layoutY="40.0" mnemonicParsing="false" text="82" />
+      <RadioButton fx:id="Node83" layoutX="417.0" layoutY="168.0" mnemonicParsing="false" text="83" />
+      <RadioButton fx:id="Node84" layoutX="417.0" layoutY="95.0" mnemonicParsing="false" text="84" />
+      <RadioButton fx:id="Node85" layoutX="18.0" layoutY="339.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="34.0" text="85" />
+      <RadioButton fx:id="Node86" layoutX="294.0" layoutY="323.0" mnemonicParsing="false" text="86" />
+      <RadioButton fx:id="Node87" layoutX="165.0" layoutY="177.0" mnemonicParsing="false" text="87" />
     </children>
 </AnchorPane>

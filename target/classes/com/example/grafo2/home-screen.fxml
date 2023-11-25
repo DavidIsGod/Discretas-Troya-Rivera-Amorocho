@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.collections.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="405.0" prefWidth="460.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grafo2.control.ControllerHomeScreen">
     <children>
-      <ImageView fitHeight="482.0" fitWidth="508.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="483.0" fitWidth="482.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../portada/Register Background Maze.jpg" />
          </image>
@@ -30,6 +33,16 @@
          <font>
             <Font name="Comic Sans MS" size="12.0" />
          </font></TextField>
-      <ChoiceBox layoutX="280.0" layoutY="242.0" prefWidth="150.0" />
+        <ComboBox fx:id="Gamemode" layoutX="273.0" layoutY="240.0" prefHeight="54.0" prefWidth="147.0" promptText="Select Gamemode">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Graph list" />
+                    <String fx:value="Graph matrix" />
+                </FXCollections>
+            </items>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </ComboBox>
     </children>
 </AnchorPane>

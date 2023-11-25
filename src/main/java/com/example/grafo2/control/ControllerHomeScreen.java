@@ -35,6 +35,11 @@ public class ControllerHomeScreen {
         this.mainStage = mainStage;
     }
 
+
+
+
+
+
     @FXML
     private void openVentanaJuego() {
         try {
@@ -42,7 +47,7 @@ public class ControllerHomeScreen {
                     getClass().getResource("/com/example/grafo2/Juego.fxml"));
             Stage stage = new Stage();
             stage.setTitle("Register papi");
-            stage.setScene(new Scene(loader.load(), 1200, 600));
+            stage.setScene(new Scene(loader.load(), 740, 435));
 
             stage.show();
 

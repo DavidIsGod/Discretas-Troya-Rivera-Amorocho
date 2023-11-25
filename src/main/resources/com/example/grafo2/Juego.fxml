@@ -5,10 +5,11 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grafo2.control.JuegoController">
 
+<?import javafx.scene.shape.Line?>
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grafo2.control.JuegoController">
     <children>
-        <Canvas fx:id="canvas" focusTraversable="true" height="450.0" layoutX="-6.0" layoutY="-9.0" width="739.0" />
+        <Canvas fx:id="canvas" focusTraversable="true" height="449.0" layoutX="-9.0" layoutY="-8.0" width="742.0" />
       <ImageView fitHeight="451.0" fitWidth="729.0" layoutX="-2.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../portada/Map Maze xd.jpg" />
@@ -100,5 +101,7 @@
       <RadioButton fx:id="Node85" layoutX="18.0" layoutY="339.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="34.0" text="85" />
       <RadioButton fx:id="Node86" layoutX="294.0" layoutY="323.0" mnemonicParsing="false" text="86" />
       <RadioButton fx:id="Node87" layoutX="165.0" layoutY="177.0" mnemonicParsing="false" text="87" />
+      <Line startx="x1" starty="y1" endx="x2" endy="y2" stroke="RED" />
+      <Line startx="x3" starty="y3" endx="x4" endy="y4" stroke="RED" />
     </children>
 </AnchorPane>
