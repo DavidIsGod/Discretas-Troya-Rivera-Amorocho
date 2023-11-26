@@ -47,7 +47,7 @@ public class ControllerHomeScreen {
                     getClass().getResource("/com/example/grafo2/Juego.fxml"));
             Stage stage = new Stage();
             stage.setTitle("Register papi");
-            stage.setScene(new Scene(loader.load(), 740, 435));
+            stage.setScene(new Scene(loader.load(), 720, 480));
 
             stage.show();
 

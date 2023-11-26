@@ -1,224 +1,455 @@
 package com.example.grafo2.control;
 
-
-
-import com.example.grafo2.model.Player;
-import com.example.grafo2.screens.ScreenA;
+import com.example.grafo2.model.Nodo;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.geometry.Point2D;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
-import javafx.scene.canvas.GraphicsContext;
 
-
-import javafx.application.Platform;
-import javafx.scene.control.ComboBox;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
-import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.ToggleButton;
 import javafx.scene.image.Image;
-import javafx.scene.input.KeyCode;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.paint.Color;
-import javafx.stage.Stage;
 
-import java.io.IOException;
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.image.ImageView;
+
 import java.net.URL;
-import java.util.ResourceBundle;
+import java.util.*;
+
 
 public class JuegoController implements Initializable {
 
-    private Player player;
+
+    @FXML
+    public RadioButton Tesoro;
+    public Button primButton;
+    @FXML
+    private Button dijkstraButton;
+    @FXML
+    public RadioButton num1;
+    @FXML
+    public RadioButton num2;
+    @FXML
+    public RadioButton num3;
+    @FXML
+    public RadioButton num4;
+    @FXML
+    public RadioButton num5;
+    @FXML
+    public RadioButton num6;
+    @FXML
+    public RadioButton num7;
+    @FXML
+    public RadioButton num8;
+    @FXML
+    public RadioButton num9;
+    @FXML
+    public RadioButton num10;
+    @FXML
+    public RadioButton num11;
+    @FXML
+    public RadioButton num12;
+    @FXML
+    public RadioButton num13;
+    @FXML
+    public RadioButton num14;
+    @FXML
+    public RadioButton num15;
+    @FXML
+    public RadioButton num16;
+    @FXML
+    public RadioButton num17;
+    @FXML
+    public RadioButton num18;
+    @FXML
+    public RadioButton num19;
+
+    @FXML
+    public RadioButton num20;
+
+    @FXML
+    public RadioButton num21;
+
+    @FXML
+    public RadioButton num22;
+
+    @FXML
+    public RadioButton num23;
+    @FXML
+    public RadioButton num24;
+
+    @FXML
+    public RadioButton num25;
+
+    @FXML
+    public RadioButton num26;
+
+    @FXML
+    public RadioButton num27;
+
+    @FXML
+    public RadioButton num28;
+
+    @FXML
+    public RadioButton num29;
+
+    @FXML
+    public RadioButton num30;
+
+    @FXML
+    public RadioButton num31;
+
+    @FXML
+    private RadioButton Inicio;
 
     @FXML
     private Canvas canvas;
-    private GraphicsContext graphicsContext;
-    private ScreenA screenA;
-
-    @FXML
-    private ToggleGroup toggleGroup;
-
-    @FXML
-    private AnchorPane anchorPane;
-
+    private List<ToggleButton> buttonList;
+    private List<Nodo> nodos;
+    private Nodo nodoActual;
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        nodos = new ArrayList<>();
+        buttonList = new ArrayList<>();
+
+        dijkstraButton.setOnAction(this::handleDijkstraButtonClick);
 
 
-
-        this.graphicsContext = canvas.getGraphicsContext2D();
-        this.screenA = new ScreenA(this.canvas);
-        GraphicsContext gc = canvas.getGraphicsContext2D();
-
-        gc.setStroke(Color.RED);
-        gc.setLineWidth(2.0);
-
-        Point2D nodo1 = new Point2D(10, 10);
-        Point2D nodo2 = new Point2D(100, 100);
-
-
-
-        gc.strokeLine(nodo1.getX(), nodo1.getY(), nodo2.getX(), nodo2.getY());
-
-
-        inicializarNodos();
-
-
-
-        conectarNodos("Node1", "Node2");
-        conectarNodos("Node2", "Node3");
-        conectarNodos("Node3", "Node4");
-        conectarNodos("Node4", "Node5");
-        conectarNodos("Node5", "Node6");
-        conectarNodos("Node6", "Node7");
-        conectarNodos("Node7", "Node8");
-        conectarNodos("Node8", "Node9");
-        conectarNodos("Node9", "Node10");
-        conectarNodos("Node10", "Node11");
-        conectarNodos("Node11", "Node12");
-        conectarNodos("Node12", "Node13");
-        conectarNodos("Node13", "Node14");
-        conectarNodos("Node14", "Node15");
-        conectarNodos("Node15", "Node16");
-        conectarNodos("Node16", "Node17");
-        conectarNodos("Node17", "Node18");
-        conectarNodos("Node18", "Node19");
-        conectarNodos("Node19", "Node20");
-        conectarNodos("Node20", "Node21");
-        conectarNodos("Node21", "Node22");
-        conectarNodos("Node22", "Node23");
-        conectarNodos("Node23", "Node24");
-        conectarNodos("Node24", "Node25");
-        conectarNodos("Node25", "Node26");
-        conectarNodos("Node26", "Node27");
-        conectarNodos("Node27", "Node28");
-        conectarNodos("Node28", "Node29");
-        conectarNodos("Node29", "Node30");
-        conectarNodos("Node30", "Node31");
-        conectarNodos("Node31", "Node32");
-        conectarNodos("Node32", "Node33");
-        conectarNodos("Node33", "Node34");
-        conectarNodos("Node34", "Node35");
-        conectarNodos("Node35", "Node36");
-        conectarNodos("Node36", "Node37");
-        conectarNodos("Node37", "Node38");
-        conectarNodos("Node38", "Node39");
-        conectarNodos("Node39", "Node40");
-        conectarNodos("Node40", "Node41");
-        conectarNodos("Node41", "Node42");
-        conectarNodos("Node42", "Node43");
-        conectarNodos("Node43", "Node44");
-        conectarNodos("Node44", "Node45");
-        conectarNodos("Node45", "Node46");
-        conectarNodos("Node46", "Node47");
-        conectarNodos("Node47", "Node48");
-        conectarNodos("Node48", "Node49");
-        conectarNodos("Node49", "Node50");
-        conectarNodos("Node50", "Node51");
-        conectarNodos("Node51", "Node52");
-        conectarNodos("Node52", "Node53");
-        conectarNodos("Node53", "Node54");
-        conectarNodos("Node54", "Node55");
-        conectarNodos("Node55", "Node56");
-        conectarNodos("Node56", "Node57");
-        conectarNodos("Node57", "Node58");
-        conectarNodos("Node58", "Node59");
-        conectarNodos("Node59", "Node60");
-        conectarNodos("Node60", "Node61");
-        conectarNodos("Node61", "Node62");
-        conectarNodos("Node62", "Node63");
-        conectarNodos("Node63", "Node64");
-        conectarNodos("Node64", "Node65");
-        conectarNodos("Node65", "Node66");
-        conectarNodos("Node66", "Node67");
-        conectarNodos("Node67", "Node68");
-        conectarNodos("Node68", "Node69");
-        conectarNodos("Node69", "Node70");
-        conectarNodos("Node70", "Node71");
-        conectarNodos("Node71", "Node72");
-        conectarNodos("Node72", "Node73");
-        conectarNodos("Node73", "Node74");
-        conectarNodos("Node74", "Node75");
-        conectarNodos("Node75", "Node76");
-        conectarNodos("Node76", "Node77");
-        conectarNodos("Node77", "Node78");
-        conectarNodos("Node78", "Node79");
-        conectarNodos("Node79", "Node80");
-        conectarNodos("Node80", "Node81");
-        conectarNodos("Node81", "Node82");
-        conectarNodos("Node82", "Node83");
-        conectarNodos("Node83", "Node84");
-        conectarNodos("Node84", "Node85");
-        conectarNodos("Node85", "Node86");
-        conectarNodos("Node86", "Node87");
-
-
-
-
+        List<RadioButton> radioButtons = Arrays.asList(
+                Tesoro, num1, num2, num3, num4, num5, num6, num7, num8, num9,
+                num10, num11, num12, num13, num14, num15, num16, num17, num18, num19,
+                num20, num21, num22, num23, num24, num25, num26, num27, num28, num29,
+                num30, num31, Inicio
+        );
 
         Image backgroundImage = new Image(getClass().getResourceAsStream("/portada/Map Maze xd.jpg"));
+        GraphicsContext gc = canvas.getGraphicsContext2D();
+        gc.drawImage(backgroundImage, 0, 0, canvas.getWidth(), canvas.getHeight());
 
-        graphicsContext.drawImage(backgroundImage, 500, 500);
+        for (int i = 0; i < 34; i++) {
+            int peso = 0;
+            Nodo nodo;
+            if (nodos.isEmpty()) {
+                nodo = new Nodo(i, peso, false);
+            } else {
+                nodo = new Nodo(i, peso+2, false);
+            }
+            nodos.add(nodo);
 
-        // Hilo de Java
-        new Thread(
-                () -> {
-                    while (true) {
 
-                        Platform.runLater(() -> {
-                            screenA.paint(backgroundImage);
+            ToggleButton button = new ToggleButton(Integer.toString(i));
+            buttonList.add(button);
 
-                        });
+            final int buttonIndex = i;
+            button.setOnAction(event -> {
+                System.out.println("Botón " + buttonIndex + " clicado");
 
-                        try {
-                            Thread.sleep(70);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }).start();
+
+                for (RadioButton rb : radioButtons) {
+                    rb.setDisable(true);
+                }
+
+
+                habilitarNodosAdyacentes(buttonIndex);
+            });
+        }
+
+        conectarNodos(new ArrayList<>(nodos));
+
+
+        conectarNodos(new ArrayList<>(nodos));
+
+        for (RadioButton button : radioButtons) {
+            button.setOnAction(event -> handleButtonClick(button));
+            Tesoro.setOnAction(event -> handleTesoroButtonClick(32));
+        }
+        primButton.setOnAction(event -> marcarBotonesEnCamino(nodos));
 
     }
 
+    private void handleDijkstraButtonClick(ActionEvent event) {
+        System.out.println("Dijkstra button clicked");
 
-    private void inicializarNodos() {
-        for (int i = 1; i <= 87; i++) {
-            RadioButton radioButton = (RadioButton) anchorPane.lookup("#Node" + i);
-            radioButton.setToggleGroup(toggleGroup);
-            final int nodo = i;
+        Nodo inicio = nodos.get(0);
+        Nodo tesoro = nodos.get(32);
 
-            radioButton.setOnAction(event -> {
-                System.out.println("Seleccionado el nodo: " + nodo);
-                // Puedes realizar acciones adicionales aquí si es necesario
-            });
+        dijkstra(inicio);
+        List<Nodo> camino = buscarCaminoDFS(inicio, tesoro);
+
+        if (camino.isEmpty()) {
+            mostrarAlerta("¡Advertencia!", "No hay un camino válido al tesoro.", Alert.AlertType.WARNING);
+        } else {
+            marcarBotonesEnCamino(camino);
+        }
+    }
+    private List<Nodo> buscarCaminoDFS(Nodo inicio, Nodo tesoro) {
+        Set<Nodo> visitados = new HashSet<>();
+        List<Nodo> camino = new ArrayList<>();
+        dfs(inicio, tesoro, visitados, camino);
+        return camino;
+    }
+
+    private void dfs(Nodo actual, Nodo tesoro, Set<Nodo> visitados, List<Nodo> camino) {
+        visitados.add(actual);
+        camino.add(actual);
+
+        if (actual.equals(tesoro)) {
+            return;
+        }
+
+        for (Nodo adyacente : actual.getNodosAdyacentes()) {
+            if (!visitados.contains(adyacente)) {
+                dfs(adyacente, tesoro, visitados, camino);
+            }
+        }
+
+        if (!camino.isEmpty() && !camino.get(camino.size() - 1).equals(tesoro)) {
+            camino.remove(camino.size() - 1);
         }
     }
 
-    private void conectarNodos(String nodo1, String nodo2) {
-        RadioButton radioButton1 = (RadioButton) anchorPane.lookup("#" + nodo1);
-        RadioButton radioButton2 = (RadioButton) anchorPane.lookup("#" + nodo2);
 
-        // Configurar acciones de los nodos (puedes personalizar esto según tus necesidades)
-        radioButton1.setOnAction(event -> {
-            System.out.println("Conectado a: " + nodo2);
-            // Puedes realizar acciones adicionales aquí si es necesario
-        });
-
-        radioButton2.setOnAction(event -> {
-            System.out.println("Conectado a: " + nodo1);
-            // Puedes realizar acciones adicionales aquí si es necesario
-        });
+    private void marcarBotonesEnCamino(List<Nodo> nodos) {
+        System.out.println("Esta es la ruta que te lleva hasta el tesoro");
+        for (Nodo nodo : nodos) {
+            ToggleButton boton = nodo.getButton();
+            if (boton != null) {
+                System.out.println("Marcando botón: " + boton.getText());  // Agrega esta línea para depurar
+                boton.setStyle("-fx-background-color: blue;");
+            }
+        }
+        mostrarAlerta("¡Felicidades!", "Has llegado al tesoro.", Alert.AlertType.INFORMATION);
     }
 
 
 
+    private void dijkstra(Nodo inicio) {
+        PriorityQueue<Nodo> colaPrioridad = new PriorityQueue<>(Comparator.comparingInt(Nodo::getPesoAcumulado));
+        inicio.setPesoAcumulado(0);
+        colaPrioridad.add(inicio);
+
+        while (!colaPrioridad.isEmpty()) {
+            Nodo nodoActual = colaPrioridad.poll();
+
+            for (Nodo adyacente : nodoActual.getNodosAdyacentes()) {
+                int nuevoPeso = nodoActual.getPesoAcumulado() + adyacente.getPeso();
+
+                if (nuevoPeso < adyacente.getPesoAcumulado()) {
+                    adyacente.setPesoAcumulado(nuevoPeso);
+                    adyacente.setPadre(nodoActual);
+                    colaPrioridad.add(adyacente);
+                }
+            }
+        }
+    }
+
+
+    private void handleButtonClick(RadioButton button) {
+        System.out.println("Botón " + button.getText() + " clicado");
+
+
+        if (button == Inicio) {
+            handleInicioButtonClick(0);
+
+        } else {
+
+            handleOtherButtonClick(button, nodoActual);
+        }
+
+
+    }
+
+    private void handleInicioButtonClick(int indiceBoton) {
+        System.out.println("Es el botón Inicio");
+
+
+        if (!nodos.get(indiceBoton).isVisited()) {
+            Inicio.setStyle("-fx-background-color: green;");
+            imprimirAdyacentes(indiceBoton);
+
+
+            habilitarNodosAdyacentes(indiceBoton);
+        } else {
+            mostrarAlerta("¡¡Advertencia!!", "Este nodo ya fue visitado.", Alert.AlertType.WARNING);
+        }
+    }
+    private void handleTesoroButtonClick(int indiceBoton) {
+        System.out.println("Es el botón Tesoro");
+
+        if (!nodos.get(indiceBoton).isVisited()) {
+            Tesoro.setStyle("-fx-background-color: green;");
+            imprimirAdyacentes(indiceBoton);
+
+            // Aquí puedes agregar acciones adicionales específicas para el nodo Tesoro si es necesario.
+
+            mostrarAlerta("¡¡Felicidades!!", "Has llegado al nodo Tesoro.", Alert.AlertType.INFORMATION);
+        } else {
+            mostrarAlerta("¡¡Advertencia!!", "Este nodo Tesoro ya fue visitado.", Alert.AlertType.WARNING);
+        }
+    }
+
+
+    private void handleOtherButtonClick(RadioButton button, Nodo inicio) {
+        System.out.println("Es otro botón");
+
+        int indiceBotonClickeado = 0;
+
+        try {
+            String buttonText = button.getId().substring(3);
+            indiceBotonClickeado = Integer.parseInt(buttonText);
+
+        } catch (NumberFormatException | IndexOutOfBoundsException e) {
+            return;
+        }
+
+        Nodo nodoClickeado = nodos.get(indiceBotonClickeado);
+
+        imprimirAdyacentes(indiceBotonClickeado);
+
+        if (nodoActual == null || esAdyacenteAlNodoActual(nodoClickeado)) {
+            if (!nodoClickeado.isVisited()) {
+                nodoClickeado.setVisited(true);
+                button.setStyle("-fx-background-color: green;");
+
+                if (nodoActual != null && nodoActual.getButton() != null) {
+                    nodoActual.getButton().setStyle("");
+                }
+
+                nodoActual = nodoClickeado;
+
+                habilitarNodosAdyacentes(indiceBotonClickeado);
+            } else {
+                nodoActual = nodoClickeado;
+                mostrarAlerta("¡¡Advertencia!!", "Este nodo ya fue visitado.", Alert.AlertType.WARNING);
+            }
+        } else {
+            mostrarAlerta("¡¡Advertencia!!", "Este nodo no es adyacente al nodo actual.", Alert.AlertType.WARNING);
+        }
+    }
+
+
+
+
+    private void habilitarNodosAdyacentes(int indiceBotonClickeado) {
+        Nodo nodoClickeado = nodos.get(indiceBotonClickeado);
+
+        for (Nodo adyacente : nodoClickeado.getNodosAdyacentes()) {
+            adyacente.getButton().setDisable(false);
+        }
+    }
+
+    private void imprimirAdyacentes(int indiceBotonClickeado) {
+        Nodo nodoClickeado = nodos.get(indiceBotonClickeado);
+
+
+        List<Nodo> adyacentes = nodoClickeado.getNodosAdyacentes();
+
+        System.out.println("Nodos adyacentes al botón " + indiceBotonClickeado + ":");
+
+        for (Nodo adyacente : adyacentes) {
+            System.out.println("Botón " + adyacente.getId());
+        }
+    }
+
+    private void mostrarAlerta(String titulo, String mensaje, Alert.AlertType tipo) {
+        Alert alert = new Alert(tipo);
+        alert.setTitle(titulo);
+        alert.setHeaderText(null);
+        alert.setContentText(mensaje);
+
+        alert.showAndWait();
+    }
+
+
+    private void conectarNodos(ArrayList<Nodo> nodos) {
+        nodos.get(0).agregarAdyacente(nodos.get(1));
+        nodos.get(1).agregarAdyacente(nodos.get(0));
+        nodos.get(1).agregarAdyacente(nodos.get(2));
+        nodos.get(2).agregarAdyacente(nodos.get(1));
+        nodos.get(1).agregarAdyacente(nodos.get(5));
+        nodos.get(5).agregarAdyacente(nodos.get(1));
+        nodos.get(1).agregarAdyacente(nodos.get(17));
+        nodos.get(17).agregarAdyacente(nodos.get(1));
+
+        nodos.get(2).agregarAdyacente(nodos.get(3));
+        nodos.get(3).agregarAdyacente(nodos.get(2));
+        nodos.get(3).agregarAdyacente(nodos.get(4));
+        nodos.get(4).agregarAdyacente(nodos.get(3));
+
+
+        nodos.get(5).agregarAdyacente(nodos.get(6));
+        nodos.get(6).agregarAdyacente(nodos.get(5));
+        nodos.get(6).agregarAdyacente(nodos.get(7));
+        nodos.get(7).agregarAdyacente(nodos.get(6));
+        nodos.get(7).agregarAdyacente(nodos.get(9));
+        nodos.get(9).agregarAdyacente(nodos.get(7));
+        nodos.get(7).agregarAdyacente(nodos.get(8));
+        nodos.get(8).agregarAdyacente(nodos.get(7));
+        nodos.get(8).agregarAdyacente(nodos.get(16));
+        nodos.get(16).agregarAdyacente(nodos.get(8));
+
+        nodos.get(9).agregarAdyacente(nodos.get(10));
+        nodos.get(10).agregarAdyacente(nodos.get(9));
+        nodos.get(9).agregarAdyacente(nodos.get(11));
+        nodos.get(11).agregarAdyacente(nodos.get(9));
+        nodos.get(11).agregarAdyacente(nodos.get(12));
+        nodos.get(12).agregarAdyacente(nodos.get(11));
+        nodos.get(13).agregarAdyacente(nodos.get(14));
+        nodos.get(14).agregarAdyacente(nodos.get(13));
+        nodos.get(14).agregarAdyacente(nodos.get(15));
+        nodos.get(15).agregarAdyacente(nodos.get(14));
+
+        nodos.get(17).agregarAdyacente(nodos.get(18));
+        nodos.get(18).agregarAdyacente(nodos.get(17));
+        nodos.get(18).agregarAdyacente(nodos.get(19));
+        nodos.get(19).agregarAdyacente(nodos.get(18));
+        nodos.get(18).agregarAdyacente(nodos.get(20));
+        nodos.get(20).agregarAdyacente(nodos.get(18));
+        nodos.get(20).agregarAdyacente(nodos.get(21));
+        nodos.get(21).agregarAdyacente(nodos.get(20));
+        nodos.get(21).agregarAdyacente(nodos.get(22));
+        nodos.get(22).agregarAdyacente(nodos.get(21));
+        nodos.get(21).agregarAdyacente(nodos.get(23));
+        nodos.get(23).agregarAdyacente(nodos.get(21));
+        nodos.get(23).agregarAdyacente(nodos.get(24));
+        nodos.get(24).agregarAdyacente(nodos.get(23));
+        nodos.get(24).agregarAdyacente(nodos.get(25));
+        nodos.get(25).agregarAdyacente(nodos.get(24));
+        nodos.get(25).agregarAdyacente(nodos.get(26));
+        nodos.get(26).agregarAdyacente(nodos.get(25));
+        nodos.get(25).agregarAdyacente(nodos.get(27));
+        nodos.get(27).agregarAdyacente(nodos.get(25));
+        nodos.get(27).agregarAdyacente(nodos.get(28));
+        nodos.get(28).agregarAdyacente(nodos.get(27));
+        nodos.get(28).agregarAdyacente(nodos.get(29));
+        nodos.get(29).agregarAdyacente(nodos.get(28));
+        nodos.get(29).agregarAdyacente(nodos.get(30));
+        nodos.get(30).agregarAdyacente(nodos.get(29));
+        nodos.get(30).agregarAdyacente(nodos.get(31));
+        nodos.get(31).agregarAdyacente(nodos.get(30));
+        nodos.get(31).agregarAdyacente(nodos.get(32));
+        nodos.get(32).agregarAdyacente(nodos.get(31));
+
+        for (Nodo nodo : nodos) {
+            List<Nodo> adyacentes = nodo.getNodosAdyacentes();
+            for (Nodo adyacente : adyacentes) {
+
+                System.out.println("Conexión: " + nodo.getId() + " -> " + adyacente.getId());
+            }
+        }
+        for (int i = 0; i < nodos.size(); i++) {
+            nodos.get(i).setButton(buttonList.get(i));
+        }
+
+    }
+
+    private boolean esAdyacenteAlNodoActual(Nodo nodo) {
+        return nodoActual != null && nodoActual.getNodosAdyacentes().contains(nodo);
+    }
+
+
 }
-
-
-
-
-

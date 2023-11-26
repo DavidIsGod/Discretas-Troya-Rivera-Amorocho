@@ -5,24 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c8200cd-21ea-43b5-bd5e-fb28af39a725" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Arista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/IGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/MazeGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Vertex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/portada/Game.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/ControllerHomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/ControllerHomeScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/JuegoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/control/JuegoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Dijkstra.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Graph.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/SimpleHashMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Arista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Avatar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/IGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Login1jugador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/MazeGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/MyFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Nodo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Nodo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Position.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/model/Vertex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grafo2/screens/ScreenA.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/Juego.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/Juego.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/home-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/grafo2/home-screen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/portada/MAZE TITLE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/portada/Map Maze xd.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/portada/Map Maze xd.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/portada/START GAME.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/portada/img.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/Juego.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/Juego.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/control/ControllerHomeScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/control/ControllerHomeScreen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/control/JuegoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/control/JuegoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/home-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/home-screen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/model/Avatar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/model/Login1jugador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/model/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grafo2/model/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/model/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grafo2/screens/ScreenA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/portada/MAZE TITLE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/portada/Map Maze xd.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/portada/Map Maze xd.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/portada/START GAME.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/portada/img.png" beforeDir="false" />
     </list>
+    <list id="1a9d40a0-d62f-447a-91c3-a210c0839ed3" name="Changes by A" comment="" />
+    <list id="6f1a83ff-9742-4376-88d9-c6fe0ecea2f7" name="Changes by Administrator" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,26 +71,36 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2Y8UtngIU5oSFZQcGgCSueS1f1P" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Music/silver-umbrella-&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/river/OneDrive/Desktop/Discretas-Troya-Rivera-Amorocho&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.grafo2.control" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\David\IdeaProjects\Grafo2\src\main\resources\animations.avatar" />
     </key>
@@ -143,6 +173,10 @@
       <workItem from="1700951242649" duration="19000" />
       <workItem from="1700951267884" duration="3000" />
       <workItem from="1700951275061" duration="4833000" />
+      <workItem from="1700950314174" duration="19828000" />
+      <workItem from="1700970786088" duration="10584000" />
+      <workItem from="1700981429805" duration="5507000" />
+      <workItem from="1700987004804" duration="4504000" />
     </task>
     <task id="LOCAL-00001" summary="Reversed pepito">
       <option name="closed" value="true" />
@@ -186,6 +220,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Reversed pepito" />
     <MESSAGE value="Updated" />
     <MESSAGE value="Update" />

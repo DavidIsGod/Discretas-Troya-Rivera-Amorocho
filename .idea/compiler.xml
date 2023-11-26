@@ -9,5 +9,8 @@
         <module name="Grafo2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demoGame" target="19" />
+    </bytecodeTargetLevel>
   </component>
 </project>
