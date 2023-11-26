@@ -16,9 +16,9 @@
 
       </image>
     </ImageView>
-    <Button fx:id="dijkstraButton" layoutX="468.0" layoutY="242.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Dijkstra" />
+    <Button fx:id="dijkstraButton" layoutX="468.0" layoutY="242.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Floyd-Warshalll" />
     <Button fx:id="primButton" layoutX="644.0" layoutY="242.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="PRIM" />
-    <TextArea layoutX="468.0" layoutY="286.0" prefHeight="101.0" prefWidth="248.0" text="El juego consiste en llegar al tesoro&#10;que se encuentra en el centro del laberinto,&#10;debido a la simplicidad del juego, al&#10;usar alguna ayuda como Dijkstra o&#10;Prim, se contará como Game Over." />
+    <TextArea layoutX="468.0" layoutY="286.0" prefHeight="101.0" prefWidth="248.0" text="El juego consiste en llegar al tesoro&#10;que se encuentra en el centro del laberinto,&#10;debido a la simplicidad del juego, al&#10;usar alguna ayuda como FloydWarshall se contará como Game Over." />
       <RadioButton fx:id="Inicio" layoutX="237.0" layoutY="41.0" mnemonicParsing="false" text="Inicio" />
       <RadioButton fx:id="Tesoro" layoutX="208.0" layoutY="246.0" mnemonicParsing="false" text="Tesoro" />
       <RadioButton fx:id="num1" layoutX="184.0" layoutY="56.0" mnemonicParsing="false" text="1" />
